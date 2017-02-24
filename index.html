@@ -1,10 +1,484 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
-    <title>码农苏的个人主页</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>码农苏的官方网站</title>
+    <meta name="Keywords" content="码农苏官方网站,码农苏-前端工程师,前端技术文章分享"/>
+    <meta name="Description" content=""/>
+    <link rel="stylesheet" href="css/font1.css"/>
+    <link rel="stylesheet" href="css/font2.css"/>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script type="text/javascript">
+        addEventListener("load",function(){
+            setTimeout(hideURLbar, 0);
+        }, false);
+        function hideURLbar(){
+            window.scrollTo(0,1);
+        }
+    </script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function($) {
+            $(".scroll").click(function(event){
+                event.preventDefault();
+                $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+            });
+        });
+    </script>
 </head>
 <body>
-  码农苏的个人主页2017-02-22
+<!--------------------------------banner---------------------------------->
+<div class="banner" id="home">
+    <div class="container">
+        <div class="top-header row">
+            <div class="logo">
+                <a href="index2.html"><img src="images/logo.png" alt=""/></a>
+            </div>
+            <div class="top-nav">
+                <div class="nav-icon">
+                    <a href="#" class="right_bt" id="activator"><span></span></a>
+                </div>
+                <div class="box" id="box">
+                    <div class="box_content">
+                        <div class="box_content_center">
+                            <div class="form_content">
+                                <div class="menu_box_list">
+                                    <ul>
+                                        <li><a class="scroll" href="#home"><span>首页</span></a></li>
+                                        <li><a class="scroll" href="#about"><span>自我介绍</span></a></li>
+                                        <li><a class="scroll" href="#services"><span>服务类别</span></a></li>
+                                        <li><a class="scroll" href="#portfolio"><span>作品集</span></a></li>
+                                        <li><a class="scroll" href="#blog"><span>技术栈</span></a></li>
+                                        <li><a class="scroll" href="#contact"><span>联系我</span></a></li>
+                                        <div class="clearfix"></div>
+                                    </ul>
+                                </div>
+                                <a class="boxclose" id="boxclose"> <span> </span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <div class="banner-info">
+            <div class="banner-left">
+                <img src="images/1.png" alt=""/>
+            </div>
+            <div class="banner-right">
+                <h1>码农苏就是我</h1>
+                <div class="border"></div>
+                <h2>前端开发工程师</h2>
+                <a href="#">下载我的个人简历</a>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<!-------------------------------自我介绍--------------------------------->
+<div class="about text-center" id="about">
+    <div class="container">
+        <h3>自我介绍</h3>
+        <div class="strip text-center"><img src="images/about.png" alt=" "/></div>
+        <p>Dyin' ain't much of a livin', boy. here. put that in your report!" and "i may have found a way out of here. you want a guarantee, buy a toaster. here. put that in your report!" and "i may have found a way out of here. this is the ak-47 assault rifle, the preferred weapon of your enemy; and it makes a distinctive sound when fired at you, so remember it. this is the ak-47 assault rifle, the preferred weapon of your enemy; and it makes a distinctive sound when fired at you, so remember it. don't p!ss down my back and tell me it's raining. this is the ak-47 assault rifle, the preferred weapon of your enemy; and it makes a distinctive sound when fired at you, so remember it. don't p!ss down my back and tell me it's raining. this is my gun, clyde! man's gotta know his limitations. ever notice how sometimes you come across somebody you shouldn't have f**ked with? well, i'm that guy.</p>
+    </div>
+</div>
+<!-------------------------------技能展示--------------------------------->
+<div class="about-back"></div>
+<div class="my-skills text-center">
+    <div class="container">
+        <h3>技能展示</h3>
+        <div class="strip text-center"><img src="images/skill.png" alt=" "/></div>
+        <div class="skill-grids">
+            <div class="col-md-2 skills-grid text-center">
+                <div class="circle" id="circles-1"></div>
+                <p>HTML5</p>
+            </div>
+            <div class="col-md-2 skills-grid text-center">
+                <div class="circle" id="circles-2"></div>
+                <p>CSS3</p>
+            </div>
+            <div class="col-md-2 skills-grid text-center">
+                <div class="circle" id="circles-3"></div>
+                <p>JavaScript</p>
+            </div>
+            <div class="col-md-2 skills-grid text-center">
+                <div class="circle" id="circles-4"></div>
+                <p>jQuery</p>
+            </div>
+            <div class="col-md-2 skills-grid text-center">
+                <div class="circle" id="circles-5"></div>
+                <p>AngularJs</p>
+            </div>
+            <div class="col-md-2 skills-grid text-center">
+                <div class="circle" id="circles-6"></div>
+                <p>NodeJs</p>
+            </div>
+            <div class="clearfix"> </div>
+            <script type="text/javascript" src="js/circles.js"></script>
+            <script>
+                var colors = [
+                    ['#6ed4c0', '#ffffff'], ['#6ed4c0', '#ffffff'], ['#6ed4c0', '#ffffff'], ['#6ed4c0', '#ffffff'], ['#6ed4c0', '#ffffff'], ['#6ed4c0', '#ffffff']
+                ];
+                var percentage = [99.9,99.9,85,90,50,30];
+                for (var i = 1; i <	 7; i++) {
+                    var child = document.getElementById('circles-' + i);
+                    Circles.create({
+                        id:         child.id,
+                        percentage: percentage[i-1],
+                        radius:     80,
+                        width:      10,
+                        number:   	percentage[i-1] / 1,
+                        text:       '%',
+                        colors:     colors[i - 1]
+                    });
+                }
+            </script>
+        </div>
+    </div>
+</div>
+<div class="my-skill-back"></div>
+<!-------------------------------教育经历--------------------------------->
+<div class="education text-center">
+    <div class="container">
+        <div class="edu-info">
+            <h3>教育经历</h3>
+        </div>
+        <div class="strip text-center"><img src="images/edu.png" alt=" "/></div>
+        <div class="edu-grids">
+            <div class="col-md-4 edu-grid">
+                <p>2009 - 2012</p><span>已毕业</span>
+                <img src="images/arrow.png" alt=""/>
+                <div class="edu-border">
+                    <div class="edu-grid-master">
+                        <h3>高中学历</h3>
+                        <h4>娄烦一中</h4>
+                    </div>
+                    <div class="edu-grid-info">
+                        <h5>This is Photoshop's version Lorem Ipsum.
+                            Well, the way they make shows is, they make one show.</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 edu-grid">
+                <p>2012 - 2016</p><span>已毕业</span>
+                <img src="images/arrow.png" alt=""/>
+                <div class="edu-border">
+                    <div class="edu-grid-master">
+                        <h3>数字媒体技术（工学）学士学位</h3>
+                        <h4>山西大同大学</h4>
+                    </div>
+                    <div class="edu-grid-info">
+                        <h5>This is Photoshop's version Lorem Ipsum.
+                            Well, the way they make shows is, they make one show.</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 edu-grid">
+                <p>2012 - 2013</p><span>已毕业</span>
+                <img src="images/arrow.png" alt=""/>
+                <div class="edu-border">
+                    <div class="edu-grid-master">
+                        <h3>前端开发工程师高级证书</h3>
+                        <h4>苏州天智教育培训结构</h4>
+                    </div>
+                    <div class="edu-grid-info">
+                        <h5>This is Photoshop's version Lorem Ipsum.
+                            Well, the way they make shows is, they make one show.</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<!--------------------------------分隔符---------------------------------->
+<div class="strip-border"><p></p></div>
+<!-------------------------------工作经验--------------------------------->
+<div class="work-experience text-center">
+    <div class="container">
+        <div class="work-info">
+            <h3>工作经验</h3>
+        </div>
+        <div class="strip text-center"><img src="images/work.png" alt=" "/></div>
+        <div class="work-grids">
+            <div class="col-md-4 w-grid">
+                <div class="work-grid">
+                    <h3>2015.9 - 2016.2</h3>
+                    <div class="work-grid-info">
+                        <h4>大同市半径科技有限责任公司</h4>
+                        <h5>前端开发工程师</h5>
+                        <p>Now that there is the Tec-9, a crappy spray gun from South Miami.
+                            This gun is advertised as the most popular gun in American crime.
+                            Do you believe that shit? It actually says that in the little book
+                            that comes with it: the most popular gun in</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 w-grid">
+                <div class="work-grid">
+                    <h3>2016.2 - 2017.1</h3>
+                    <div class="work-grid-info">
+                        <h4>大同市万腾科技有限责任公司</h4>
+                        <h5>前端开发工程师</h5>
+                        <p>Now that there is the Tec-9, a crappy spray gun from South Miami.
+                            This gun is advertised as the most popular gun in American crime.
+                            Do you believe that shit? It actually says that in the little book
+                            that comes with it: the most popular gun in</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 w-grid">
+                <div class="work-grid">
+                    <h3>2017.1 - NOW</h3>
+                    <div class="work-grid-info">
+                        <h4>迅傲信息科技股份有限公司</h4>
+                        <h5>前端开发工程师</h5>
+                        <p>Now that there is the Tec-9, a crappy spray gun from South Miami.
+                            This gun is advertised as the most popular gun in American crime.
+                            Do you believe that shit? It actually says that in the little book
+                            that comes with it: the most popular gun in</p>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<!-------------------------------服务类别--------------------------------->
+<div class="services-back"></div>
+<div class="services text-center" id="services">
+    <div class="container">
+        <div class="ser-info">
+            <h3>服务类别</h3>
+        </div>
+        <div class="strip text-center"><img src="images/ser.png" alt=" "/></div>
+        <div class="ser-grids">
+            <div class="col-md-3 ser-grid">
+                <div class="ser-imagea"></div>
+                <h3>产品体验设计</h3>
+                <p>I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps.</p>
+            </div>
+            <div class="col-md-3 ser-grid">
+                <div class="ser-imageb"></div>
+                <h3>网站建设</h3>
+                <p>I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps.</p>
+            </div>
+            <div class="col-md-3 ser-grid">
+                <div class="ser-imagec"></div>
+                <h3>APP开发</h3>
+                <p>I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps.</p>
+            </div>
+            <div class="col-md-3 ser-grid">
+                <div class="ser-imaged"></div>
+                <h3>微信H5开发</h3>
+                <p>I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps.</p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<!--------------------------------作品集---------------------------------->
+<div class="gallery-section text-center" id="portfolio">
+    <div class="container">
+        <h3>作品集</h3>
+        <div class="strip text-center"><img src="images/port.png" alt=" "/></div>
+        <p>You think water moves fast? You should see ice. It moves like it has a mind.Like it knows it killed the world once and got a taste for murder. After the avalanche,it took us a week to climb out. Now, I don't know exactly when we turned on each other,but I know that seven of us survived the slide and only five made it out. Now we took an oath, that I'm breaking now. We said we'd say it was the snow that killed the other two,but it wasn't. Nature is lethal but it doesn't hold a candle to man.</p>
+        <div class="gallery-grids">
+            <div class="top-gallery">
+                <div class="col-md-4 gallery-grid gallery1">
+                    <a href="images/p1.jpg" class="swipebox"><img src="images/p1.jpg" class="img-responsive" alt="/">
+                        <div class="textbox">
+                            <h4>Project Name</h4>
+                            <p>WEB DESIGN</p>
+                            <div class="button"><a href="images/p1.jpg" class="swipebox">VIEW</a></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 gallery-grid gallery1">
+                    <a href="images/p2.jpg" class="swipebox"><img src="images/p2.jpg" class="img-responsive" alt="/">
+                        <div class="textbox">
+                            <h4>Project Name</h4>
+                            <p>WEB DESIGN</p>
+                            <div class="button"><a href="images/p2.jpg" class="swipebox">VIEW</a></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 gallery-grid gallery1">
+                    <a href="images/p3.jpg" class="swipebox"><img src="images/p3.jpg" class="img-responsive" alt="/">
+                        <div class="textbox">
+                            <h4>Project Name</h4>
+                            <p>WEB DESIGN</p>
+                            <div class="button"><a href="images/p3.jpg" class="swipebox">VIEW</a></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 gallery-grid gallery1">
+                    <a href="images/p4.jpg" class="swipebox"><img src="images/p4.jpg" class="img-responsive" alt="/">
+                        <div class="textbox">
+                            <h4>Project Name</h4>
+                            <p>WEB DESIGN</p>
+                            <div class="button"><a href="images/p4.jpg" class="swipebox">VIEW</a></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 gallery-grid gallery1">
+                    <a href="images/p5.jpg" class="swipebox"><img src="images/p5.jpg" class="img-responsive" alt="/">
+                        <div class="textbox">
+                            <h4>Project Name</h4>
+                            <p>WEB DESIGN</p>
+                            <div class="button"><a href="images/p5.jpg" class="swipebox">VIEW</a></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 gallery-grid gallery1">
+                    <a href="images/p6.jpg" class="swipebox"><img src="images/p6.jpg" class="img-responsive" alt="/">
+                        <div class="textbox">
+                            <h4>Project Name</h4>
+                            <p>WEB DESIGN</p>
+                            <div class="button"><a href="images/p6.jpg" class="swipebox">VIEW</a></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------------------------------技术栈---------------------------------->
+<div class="blog" id="blog">
+    <div class="container">
+        <div class="blog-info text-center">
+            <h3>技术栈</h3>
+            <div class="strip text-center"><img src="images/blog.png" alt=" "/></div>
+        </div>
+        <div class="blog-grids">
+            <div class="col-md-4 blog-text-info">
+                <div class="blog-grid">
+                    <a href="single.html"><img src="images/a.jpg" alt=""/></a>
+                    <div class="blog-text">
+                        <a href="single.html">Nature is lethal but it doesn't hold a candle to man.</a>
+                        <div class="stripa"></div>
+                        <p>Your bones don't break, mine do. That's clear. Your cells react to bacteria
+                            and viruses differently than mine. You don't get sick, I do.</p>
+                    </div>
+                    <div class="blog-pos">
+                        <p>5<span>May</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 blog-text-info">
+                <div class="blog-grid">
+                    <a href="single.html"><img src="images/b.jpg" alt=""/></a>
+                    <div class="blog-text">
+                        <a href="single.html">Nature is lethal but it doesn't hold a candle to man.</a>
+                        <div class="stripa"></div>
+                        <p>Your bones don't break, mine do. That's clear. Your cells react to bacteria
+                            and viruses differently than mine. You don't get sick, I do.</p>
+                    </div>
+                    <div class="blog-pos">
+                        <p>5<span>May</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 blog-text-info">
+                <div class="blog-grid">
+                    <a href="single.html"><img src="images/c.jpg" alt=""/></a>
+                    <div class="blog-text">
+                        <a href="single.html">Nature is lethal but it doesn't hold a candle to man.</a>
+                        <div class="stripa"></div>
+                        <p>Your bones don't break, mine do. That's clear. Your cells react to bacteria
+                            and viruses differently than mine. You don't get sick, I do.</p>
+                    </div>
+                    <div class="blog-pos">
+                        <p>5<span>May</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 blog-text-info">
+                <div class="blog-grid">
+                    <a href="single.html"><img src="images/a.jpg" alt=""/></a>
+                    <div class="blog-text">
+                        <a href="single.html">Nature is lethal but it doesn't hold a candle to man.</a>
+                        <div class="stripa"></div>
+                        <p>Your bones don't break, mine do. That's clear. Your cells react to bacteria
+                            and viruses differently than mine. You don't get sick, I do.</p>
+                    </div>
+                    <div class="blog-pos">
+                        <p>5<span>May</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 blog-text-info">
+                <div class="blog-grid">
+                    <a href="single.html"><img src="images/b.jpg" alt=""/></a>
+                    <div class="blog-text">
+                        <a href="single.html">Nature is lethal but it doesn't hold a candle to man.</a>
+                        <div class="stripa"></div>
+                        <p>Your bones don't break, mine do. That's clear. Your cells react to bacteria
+                            and viruses differently than mine. You don't get sick, I do.</p>
+                    </div>
+                    <div class="blog-pos">
+                        <p>5<span>May</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 blog-text-info">
+                <div class="blog-grid">
+                    <a href="single.html"><img src="images/c.jpg" alt=""/></a>
+                    <div class="blog-text">
+                        <a href="single.html">Nature is lethal but it doesn't hold a candle to man.</a>
+                        <div class="stripa"></div>
+                        <p>Your bones don't break, mine do. That's clear. Your cells react to bacteria
+                            and viruses differently than mine. You don't get sick, I do.</p>
+                    </div>
+                    <div class="blog-pos">
+                        <p>5<span>May</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<!--------------------------------联系我---------------------------------->
+<div class="contact" id="contact">
+    <div class="container">
+        <div class="contact-info text-center">
+            <h3>联系我</h3>
+            <div class="strip text-center"><img src="images/con1.png" alt=" "/></div>
+        </div>
+        <div class="contact-grids">
+            <p>邮箱:manongsu@163.com</p>
+            <p>QQ:1170935515</p>
+        </div>
+    </div>
+</div>
+<div class="footer-top"></div>
+<!-------------------------------版权信息--------------------------------->
+<div class="footer">
+    <div class="container">
+        <p>Copyright &copy; 2016 - 2017 <a href=""></a></p>
+        <p>
+            <a href="https://github.com/manongsu" target="_blank">github</a>
+            &nbsp;|&nbsp;
+            <a href="#" target="_blank">淘宝网店</a>
+            &nbsp;|&nbsp;
+            <a href="#" target="_blank">斗鱼直播</a>
+        </p>
+    </div>
+</div>
+<!-------------------------------返回顶部--------------------------------->
+<script type="text/javascript">
+    $(document).ready(function() {
+        $().UItoTop({ easingType: 'easeOutQuart' });
+    });
+</script>
 </body>
+<script type="text/javascript" src="js/classie.js"></script>
+<script type="text/javascript" src="js/down_menu.js"></script>
 </html>
