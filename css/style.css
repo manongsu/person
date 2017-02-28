@@ -3012,6 +3012,7 @@ border:none;
 	.skills-grid {
 	  width: 50% !important;
 	  float: left;
+	  padding:0 !important;
 	}
 	.skills-grid p {
 	  font-size: 13px;
