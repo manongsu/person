@@ -135,7 +135,7 @@ span.circles-text {font-size: 36px;}
 .contact-info h3{margin: 0;color: #2b2b2b;font-size: 36px;font-weight: 500;letter-spacing: 18px;}
 .contact-grids{margin-top:50px;}
 .contact-grids h3{color: #2b2b2b;font-size: 20px;font-weight: 400;margin: 0 0 25px 0;}
-.contact-grids p{text-align: center;line-height: 30px;font-size: 20px;}
+.contact-grids p{width:260px;margin:0 auto;line-height: 30px;font-size: 20px;}
 /*------------------------------------footer--------------------------------------*/
 .footer{background:#888b90;padding:40px 0;}
 .footer p{text-align:center;margin:0;font-size:18px;color:#ffffff;font-weight:400;}
